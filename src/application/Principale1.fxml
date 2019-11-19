@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="principale" minHeight="848.0" onKeyPressed="#presser" onKeyReleased="#relacher" prefHeight="858.0" prefWidth="1350.0" style="-fx-border-style: solid inside ;-fx-border-width: 2; -fx-border-insets: 5;-fx-border-radius: 5; -fx-border-color:green;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.PrincipaleController">
+
+  <children>
+    <BorderPane fx:id="root" focusTraversable="true" layoutX="0.0" layoutY="60.0" maxHeight="800.0" minHeight="800.0" onMouseClicked="#cliquer" prefWidth="1350.0" style="-fx-border-style: solid inside ;-fx-border-width: 2; -fx-border-insets: 5;-fx-border-radius: 5; -fx-border-color:red;" >
+     <ImageView  fx:id="imageAccueil"  fitHeight="800" fitWidth="1350" >
+ <image>
+ <Image url="@Arene1.jpg"></Image>
+ </image> 
+ </ImageView>
+    </BorderPane>
+    
+    <HBox fx:id="barHaut" fillHeight="true" focusTraversable="true" layoutX="0.0" layoutY="0.0" pickOnBounds="true" prefHeight="50.0" prefWidth="1343.0" spacing="60.0" style="-fx-border-style: solid inside ;-fx-border-width: 2; -fx-border-insets: 5;-fx-border-radius: 5; -fx-border-color:grey;">
+      <children>
+        <Slider focusTraversable="false" max="15.0" min="5.0" />
+        <ProgressBar fx:id="BarVie" prefWidth="200.0" />
+        <Button mnemonicParsing="false" prefWidth="150.0" text="Save" textFill="#330000" />
+        <Button mnemonicParsing="false" prefWidth="128.0" text="Pause" fx:id="pause"  onMousePressed="#Pause"/>
+        <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Démons en vie :" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" fx:id="démons"/>
+          </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Score :" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" fx:id="score" />
+          </children>
+        </HBox>
+      </children>
+      <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+    </HBox>
+  </children>
+</AnchorPane>

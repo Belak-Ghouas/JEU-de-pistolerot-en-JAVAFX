@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Options" xmlns="http://javafx.com/javafx/2.2">
+  <ImageView  fx:id="imageAccueil"  fitHeight="800" fitWidth="1350" >
+ <image>
+ <Image url="@Option.jpg"></Image>
+ </image> 
+ </ImageView>
+  <children>
+    <BorderPane layoutX="120.0" layoutY="150.0" opacity="1.0" prefHeight="234.0" prefWidth="407.0" />
+    <VBox layoutX="177.0" layoutY="113.0" prefHeight="188.0" prefWidth="303.0" spacing="20.0">
+      <children>
+        <HBox prefHeight="22.0" prefWidth="246.0" spacing="28.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Droite" />
+            <TextField fx:id="droite" prefWidth="185.0" onKeyPressed="#KeyDroite" />
+          </children>
+        </HBox>
+        <HBox prefHeight="22.0" prefWidth="255.0" spacing="20.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gauche" />
+            <TextField  fx:id="gauche" prefWidth="185.0" onKeyPressed="#KeyGauche" />
+          </children>
+        </HBox>
+        <HBox prefHeight="22.0" prefWidth="255.0" spacing="38.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Haut" />
+            <TextField fx:id="haut" prefWidth="185.0"  onKeyPressed="#KeyHaut"/>
+          </children>
+        </HBox>
+        <HBox prefHeight="22.0" prefWidth="246.0" spacing="44.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bas" />
+            <TextField fx:id="bas" prefWidth="185.0"  onKeyPressed="#KeyBas"/>
+          </children>
+        </HBox>
+        <HBox prefHeight="22.0" prefWidth="246.0" spacing="44.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tire" />
+            <TextField fx:id="tire" prefWidth="185.0"  onKeyPressed="#KeyTire"/>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+    <Button  fx:id="save" layoutX="457.0" layoutY="301.0" mnemonicParsing="false" text="Sauvgarder" onMouseClicked="#sauvgarde"/>
+    <Text fill="BLACK" layoutX="283.0" layoutY="51.0" scaleX="5.221115605561032" scaleY="2.847388098138099" strokeType="OUTSIDE" strokeWidth="2.0" text="Options" />
+  </children>
+</AnchorPane>

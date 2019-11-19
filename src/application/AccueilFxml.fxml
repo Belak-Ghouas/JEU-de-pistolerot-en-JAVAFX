@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.shape.Rectangle?>
+
+ <Pane fx:id="Accueil" id="GridPane" maxHeight="800" maxWidth="1350" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Accueil">
+ <ImageView  fx:id="imageAccueil"  fitHeight="800" fitWidth="1350" >
+ <image>
+ <Image url="@Accueil.jpg"></Image>
+ </image> 
+ </ImageView>
+ <Line fx:id="line" startX="540" startY="280" endX="540" endY="480" strokeWidth="3.0" scaleY="0">
+ </Line>
+ <VBox fx:id="menu"  translateX="545" translateY="300" >
+ 
+  </VBox>
+</Pane> 
